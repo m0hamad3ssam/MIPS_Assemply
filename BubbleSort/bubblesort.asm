@@ -5,7 +5,6 @@ x : .word 3,2,7,9,4,1
 main:
 jal bubble
 
-
 # bubble sort
 bubble:
     addi $sp, $sp, -4
@@ -33,7 +32,6 @@ bubble:
         blt $t5, $t6, loop2     
         jal swap
         j loop2
-
 
 swap:
     addi $sp, $sp, -8
